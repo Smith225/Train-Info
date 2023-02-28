@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Train Live Status</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="/css/styles2.css">
+  </head>
+  <body>
+
+  <form class="" action="/Stations" method="post">
+
+<center>
+<div class="box">
+
+    <p class="heading">Live Status</p>
+    <hr>
+
+<%  if(jsObject.length == 0) {%>
+      <p class="error"><%= output.errorMsg %></p>
+<%   }else {  %>
+
+    <p class="property">Station Name</p>
+    <p class="values"><%= jsObject.source_name %></p>
+
+    <p class="property">Station Code</p>
+    <p class="values"><%= jsObject.source_code %></p>
+
+    <p class="property">Train Status</p>
+    <p class="values"><%= jsObject.departed %></p>
+<%   }  %>
+
+</div>
+</center>
+
+  </form>
+
+  </body>
+</html>

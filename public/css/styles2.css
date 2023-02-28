@@ -1,0 +1,64 @@
+/* This stylesheet is for post home route that is(successInfo) : app.post("/")  and also for app.post("/TrainLiveStatus")  */
+.box {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  top: 2em;
+  padding: 2em;
+  border: solid 3px;
+  border-radius: 8px;
+  background-color: #99c2ff;
+  border-color: #B19CD9;
+}
+
+.property {
+  margin-bottom: 0;
+  font-size: 1.5em;
+}
+
+.values {
+  margin-top: 0;
+  margin-bottom: 1.5em;
+  font-size: 1.7em;
+}
+
+.btn1 {
+  position: relative;
+  left: 7em;
+}
+
+.inputId {
+  visibility: hidden;
+}
+
+.btn2 {
+  width: 6em;
+  height: 36px;
+  position: absolute;
+  z-index: 1;
+  left: 23.9em;
+  bottom: 5.3em;
+}
+
+.heading {
+  color: #964B00;
+  font-size: 2.4em;
+  margin-bottom: 0;
+}
+
+.error {
+  font-size: 1.5em;
+}
+
+hr {
+  width: 50%;
+  margin-top: 0;
+  margin-bottom: 3.5em;
+  border: solid 1px;
+  border-color: #FFFF;
+}
+
+body {
+  margin: 0;
+  background-color: #005ce6;
+}

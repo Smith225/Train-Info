@@ -1,0 +1,71 @@
+/* This stylesheet is used for get home route only that is app.get("/") */
+.mainHeadingBox {
+  position: absolute;
+  height: 99%;
+  width: 28%;
+  background-color: #1a1a1a;
+  top: 0;
+}
+
+.mainHeading {
+  color: #FFFF;
+  font-size: 5em;
+  position: relative;
+  top: 3em;
+  left: 1em;
+  margin: 0;
+}
+.mainH2 {
+  top: 2.5em;
+  left: 1.2em;
+}
+
+.img {
+  position: absolute;
+  z-index: -1;
+  width: 72%;
+  height: 99%;
+  top: 0;
+  right: 0;
+}
+
+.box {
+  position: relative;
+  top: 2em;
+  left: 10em;
+  width: 40%;
+  height: 16em;
+  margin: auto;
+  margin-top: 14em;
+  border: solid 2px;
+  border-radius: 8px;
+  border-color: #B19CD9;
+  background-color: rgba(0, 102, 204,0.6);
+}
+
+.heading {
+  color: #FFFF;
+  font-size: 2em;
+  margin-top: 0.5em;
+  margin-bottom: 0.8em;
+}
+
+.suggest {
+  color: #FFFF;
+  font-size: 1.1em;
+}
+
+.trainInput {
+  display: block;
+  margin-bottom: 1.3em;
+}
+
+.btn {
+  display: block;
+  width: 6em;
+
+}
+
+body {
+  margin: 0;
+}

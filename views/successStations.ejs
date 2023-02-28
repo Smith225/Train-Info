@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Stations</title>
+
+  <link rel="stylesheet" href="/css/styles3.css">
+  </head>
+  <body>
+
+<center>
+<div class="box">
+
+  <div class="headingBox">
+    <p class="heading">Stations</p>
+  </div>
+
+<% if(stations.length == 0) {  %>
+  <p class="error">The stations of the train can be only viewed on working days of train.
+<%= output.errorMsg %></p>
+<%  } else {  %>
+
+<%    for(index in stations){     %>
+  <p class="stationNum">Station No.
+  <%=  parseInt(index) + 1   %></p>
+
+<%      for(key in stations[index]){     %>
+<%        if(key== "source_name"){       %>
+  <p class="property">Source Name</p>
+  <p class="values"><%=          stations[index][key]    %></p>
+<%        }    %>
+
+<%        if(key== "source_code"){       %>
+  <p class="property">Source Code</p>
+  <p class="values"><%=          stations[index][key]    %></p>
+<%        }        %>
+
+<%        if(key== "arrival_time"){      %>
+  <p class="property">Arrival Time</p>
+  <p class="values"><%=          stations[index][key]    %></p>
+<%        }        %>
+
+<%        if(key== "departure_time"){    %>
+  <p class="property">Departure Time</p>
+  <p class="valuesEnd"><%=          stations[index][key]    %></p>
+<%        }        %>
+
+<%      }    %>
+
+<%    }     %>
+<%    }     %>
+
+
+</div>
+</center>
+
+  </body>
+</html>
